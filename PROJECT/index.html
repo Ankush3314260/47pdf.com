@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47PDFs.COM</title>
+  <link rel="stylesheet" href="deco.css"> 
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <style>
+    html,body{
+    margin: 0;
+    padding: 0;
+   background-color: #acf1d5;
+   background-image: url("https://cdn.pixabay.com/photo/2022/08/07/08/32/difference-7370144_1280.png");
+    
+}
+h1{
+  text-align: center;
+  /* padding-top:10px; */
+  color: rgb(49, 226, 197);
+  font-size: 70px;
+  background-color: #B2BEB9;
+
+  
+}
+img{
+  width: 200px;
+}
+#file_1{
+   margin-left: 50%;
+}
+#file_2{
+   margin-left: 50%;
+}
+.main_box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 12%;
+  
+   
+}
+.maincontext1{
+    display: flex;
+    align-items: center;
+    background-image: url("https://png.pngtree.com/png-vector/20190412/ourmid/pngtree-pdf-file-document-icon-png-image_929373.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+height: 200px;
+width: 400px;
+border: 1px solid black 1px;
+border-collapse: collapse;
+background-color: #DEEEE7;
+border-collapse: separate;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.maincontext2{
+  background-image: url("https://png.pngtree.com/png-vector/20190412/ourmid/pngtree-pdf-file-document-icon-png-image_929373.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-collapse: collapse;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+  border: 1px solid black 1px;
+  background-color: #DFDEEE;
+  box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
+  
+}
+
+.input{
+  height: 50px;
+  width: 150px;
+border: 2px solid black;
+border-radius: 23px;
+margin-left: 45%;
+margin-top: 5%;
+animation-name: slow;
+animation-duration: 3s;
+}
+@keyframes slow{
+
+  0%{
+      background-color: red;
+  }
+  25%{
+     background-color: orange;
+  }
+  50%{
+       background-color: yellow;
+  }
+  100%{
+      background-color: greenyellow;
+  }
+  
+}
+@media only screen  and (max-width:434px){
+ html,body{
+     background-color: #B2BEB9;
+
+ }
+ .container{
+   margin-top: 30%;
+ }
+ .main_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+    .maincontext1{
+      height: 150px;
+      width: 250px;
+      align-items: center;
+      display: flex;
+      box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
+    }
+    .maincontext2{
+      height: 150px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
+    }
+    .button{
+      margin-right: 26%;
+      animation-name: slow_fill;
+    }
+  
+    
+    html,body{
+      margin: 0;
+      padding: 0;
+      background-image: url("https://cdn.pixabay.com/photo/2022/08/07/08/32/difference-7370144_1280.png");
+      /* background-repeat: no-repeat; */
+      background-size: contain;
+      height: 110%;
+      
+  }
+}
+.input:hover{
+         /* background-color: rgb(125, 207, 180); */
+         animation-name: slow_fill;
+         animation-duration: 4s;
+         
+}
+.navbar{
+     height: 60px;
+     opacity: 0.5;
+     background-color: black;
+}
+marquee{
+    z-index: -1;
+    color: #DEEEE7;
+}
+a{
+   text-decoration: none;
+   color: aliceblue;
+}
+  </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <marquee behavior="left" direction="left" scrollamount="10"> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ankushsingh3314260@gmail.com" target="_blank">DEAL : KEEP YOUR SUGGESTION BY CLICKING ME AND MAY YOU GET YOUR NAME IN NEXT UPDATE </a> </marquee>
+        <!-- <h1> 47pdf.com</h1> -->
+        
+    </nav>
+    
+    <form method="post" action="/merge" enctype="multipart/form-data">
+        <div class="container">
+    <div class="main_box">
+    <div class="maincontext1">
+       <input type="file" name="pdfs" id="file_2"  accept=".pdf">
+    </div>
+    <div class="maincontext2">
+        <input type="file" id="file_1" name="pdfs" accept=".pdf">
+    </div>
+</div>
+</div>
+<div class="button">
+    <input class="input" type="submit" value="SUBMIT">
+</div>
+</form>
+<br><br>
+</body>
+</html>
